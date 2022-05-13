@@ -3560,8 +3560,8 @@ NavMeshAgent:
   m_BaseOffset: 2.595
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!70 &2055592815
-CapsuleCollider2D:
+--- !u!61 &2055592819
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3573,9 +3573,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.3, y: 5.19}
-  m_Direction: 0
+  m_Offset: {x: 0.0064811707, y: -0.0075753927}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.3, y: 5.19}
+    newSize: {x: 4.3, y: 5.19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.34832, y: 5.193509}
+  m_EdgeRadius: 0
 --- !u!1 &2077552041
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,11 +3657,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1355722719497489744, guid: e09603bc20721c84983cfb22ec6753a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 184.84
+      value: 190.4
       objectReference: {fileID: 0}
     - target: {fileID: 1355722719497489744, guid: e09603bc20721c84983cfb22ec6753a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 108.14981
+      value: 110.8
       objectReference: {fileID: 0}
     - target: {fileID: 1355722719497489744, guid: e09603bc20721c84983cfb22ec6753a9, type: 3}
       propertyPath: m_LocalPosition.z

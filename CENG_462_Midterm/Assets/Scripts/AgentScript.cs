@@ -64,22 +64,29 @@ public class AgentScript : MonoBehaviour
     {
         while (isDead == false)
         {
-            
+            animator.SetTrigger("isAttack");
+            yield return new WaitForSeconds(1f); //time delay in order to perform animation first
 
             if (agentSr.flipX == true)
             {
-                animator.SetTrigger("isAttack");
-                yield return new WaitForSeconds(1f); //time delay in order to perform animation first
                 Instantiate(daggerPrefab, new Vector3(transform.position.x - daggerXOffset, transform.position.y - daggerYOffset, 0), Quaternion.Inverse(daggerPrefab.transform.rotation));
             }
             else
             {
-                animator.SetTrigger("isAttack");
-                yield return new WaitForSeconds(1f); //time delay in order to perform animation first
                 Instantiate(daggerPrefab, new Vector3(transform.position.x + daggerXOffset, transform.position.y - daggerYOffset, 0), daggerPrefab.transform.rotation);
             }
 
             yield return new WaitForSeconds(5f);
         } 
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Throwable"))
+        {
+            //later
+        }
+        
     }
 }
