@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: House asset blackcat_4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1815551713, guid: ef77c6e2e433fdb468bfda7f6b3765a6, type: 3}
+  m_Sprite: {fileID: 1815551713, guid: c416b14b8cf8cb34691d5407d12e669d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
