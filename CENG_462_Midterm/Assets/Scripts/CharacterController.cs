@@ -73,7 +73,7 @@ public class CharacterController : MonoBehaviour
 
     public IEnumerator playAnimation()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         if(characterSr.flipX == true)
         {
@@ -91,8 +91,4 @@ public class CharacterController : MonoBehaviour
         characterRb.velocity = new Vector2(characterSpeed * horizontalMoveDirection, characterRb.velocity.y);
         characterRb.velocity = new Vector2(characterRb.velocity.x, characterSpeed * verticalMoveDirection);
     }
-
-
-
-
 }

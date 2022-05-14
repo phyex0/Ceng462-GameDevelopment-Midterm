@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 162076364}
   - component: {fileID: 162076363}
   - component: {fileID: 162076362}
+  - component: {fileID: 162076365}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -200,13 +201,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162076361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.04, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &162076365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162076361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a03577b9a4647f45a5d8f673bbf9b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraSize: 8.989146
 --- !u!1001 &274500391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -220,11 +234,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1355722719497489744, guid: e09603bc20721c84983cfb22ec6753a9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 0.39825
       objectReference: {fileID: 0}
     - target: {fileID: 1355722719497489744, guid: e09603bc20721c84983cfb22ec6753a9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.34
+      value: 0.3180198
       objectReference: {fileID: 0}
     - target: {fileID: 1355722719497489744, guid: e09603bc20721c84983cfb22ec6753a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8341,8 +8355,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104255030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.52, y: 0.18, z: 0}
+  m_LocalScale: {x: 1.06, y: 0.96, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 938170547}
