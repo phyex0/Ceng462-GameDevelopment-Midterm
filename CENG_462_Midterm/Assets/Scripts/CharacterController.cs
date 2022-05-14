@@ -96,7 +96,7 @@ public class CharacterController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Throwable")){
-            Health.playerHealth -= 10;
+            Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin
         }
     }
 }
