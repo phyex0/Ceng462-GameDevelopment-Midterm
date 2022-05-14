@@ -16,7 +16,7 @@ public class AgentScript : MonoBehaviour
     private Animator animator;
 
 
-    private float daggerXOffset = 1.45f;
+    private float daggerXOffset = 1.7f;
     private float daggerYOffset = 0.42f;
 
     // Start is called before the first frame update
@@ -69,6 +69,7 @@ public class AgentScript : MonoBehaviour
 
             if (agentSr.flipX == true)
             {
+                Debug.Log("Buraya kaç kere giriyor");
                 Instantiate(daggerPrefab, new Vector3(transform.position.x - daggerXOffset, transform.position.y - daggerYOffset, 0), Quaternion.Inverse(daggerPrefab.transform.rotation));
             }
             else
