@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Throwable
-  - Wall
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -46,12 +45,6 @@ TagManager:
   - name: Background
     uniqueID: 330360389
     locked: 0
-  - name: Midground
-    uniqueID: 3057607335
-    locked: 0
   - name: Foreground
     uniqueID: 4080577309
-    locked: 0
-  - name: TopGround
-    uniqueID: 2764953313
     locked: 0
