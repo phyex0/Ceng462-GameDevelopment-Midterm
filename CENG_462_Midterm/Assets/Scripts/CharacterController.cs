@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] private float characterSpeed = 5.0f;
-    public AudioSource throwSound;
+
     private Rigidbody2D characterRb;
     private Animator animator;
     private SpriteRenderer characterSr;
@@ -22,8 +22,6 @@ public class CharacterController : MonoBehaviour
         characterRb = GetComponent<Rigidbody2D>(); //caching
         characterSr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        throwSound = GetComponent<AudioSource>();
-
     }
 
     private void Update()
@@ -69,8 +67,7 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) ){
             animator.SetTrigger("Throw");
             StartCoroutine(playAnimation());
-            throwSound.Play();
-
+                  
         }
     }
 
@@ -93,5 +90,13 @@ public class CharacterController : MonoBehaviour
     {
         characterRb.velocity = new Vector2(characterSpeed * horizontalMoveDirection, characterRb.velocity.y);
         characterRb.velocity = new Vector2(characterRb.velocity.x, characterSpeed * verticalMoveDirection);
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Throwable")){
+            Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin
+        }
     }
 }

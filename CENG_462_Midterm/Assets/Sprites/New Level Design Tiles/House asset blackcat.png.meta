@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 45
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -873,7 +873,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      House asset blackcat_26: 381362188
+      House asset blackcat_28: -719732446
       House asset blackcat_20: -948478529
       House asset blackcat_8: -1728981128
       House asset blackcat_7: 926434195
@@ -907,7 +907,7 @@ TextureImporter:
       House asset blackcat_4: 1815551713
       House asset blackcat_12: 488938314
       House asset blackcat_21: -773941354
-      House asset blackcat_28: -719732446
+      House asset blackcat_26: 381362188
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
