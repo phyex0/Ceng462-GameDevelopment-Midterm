@@ -10,7 +10,7 @@ public class CharacterController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer characterSr;
     [SerializeField] GameObject daggerPrefab;
-    public AudioSource throwSound;
+
     private float horizontalMoveDirection = 0f;
     private float verticalMoveDirection = 0f;
     private float daggerXOffset = 1.45f;
@@ -22,7 +22,6 @@ public class CharacterController : MonoBehaviour
         characterRb = GetComponent<Rigidbody2D>(); //caching
         characterSr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        throwSound = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -68,8 +67,7 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) ){
             animator.SetTrigger("Throw");
             StartCoroutine(playAnimation());
-            throwSound.Play();
-
+                  
         }
     }
 
