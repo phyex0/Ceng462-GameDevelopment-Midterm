@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] private float characterSpeed = 5.0f;
-    public AudioSource hitSound;
+    public AudioSource throwSound;
     private Rigidbody2D characterRb;
     private Animator animator;
     private SpriteRenderer characterSr;
@@ -22,7 +22,7 @@ public class CharacterController : MonoBehaviour
         characterRb = GetComponent<Rigidbody2D>(); //caching
         characterSr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        hitSound = GetComponent<AudioSource>();
+        throwSound = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -68,7 +68,7 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) ){
             animator.SetTrigger("Throw");
             StartCoroutine(playAnimation());
-            hitSound.Play();
+            throwSound.Play();
 
         }
     }
