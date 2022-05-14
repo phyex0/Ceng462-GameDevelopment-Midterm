@@ -23,6 +23,7 @@ public class CharacterController : MonoBehaviour
         characterSr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         throwSound = GetComponent<AudioSource>();
+
     }
 
     private void Update()
