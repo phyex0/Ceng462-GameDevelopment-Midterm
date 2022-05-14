@@ -69,7 +69,6 @@ public class AgentScript : MonoBehaviour
 
             if (agentSr.flipX == true)
             {
-                Debug.Log("Buraya kaç kere giriyor");
                 Instantiate(daggerPrefab, new Vector3(transform.position.x - daggerXOffset, transform.position.y - daggerYOffset, 0), Quaternion.Inverse(daggerPrefab.transform.rotation));
             }
             else
@@ -86,7 +85,7 @@ public class AgentScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Throwable"))
         {
-            //later
+            Health.bossHealth -= 10;
         }
         
     }

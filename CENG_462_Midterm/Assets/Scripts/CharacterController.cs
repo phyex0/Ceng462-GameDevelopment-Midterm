@@ -91,4 +91,12 @@ public class CharacterController : MonoBehaviour
         characterRb.velocity = new Vector2(characterSpeed * horizontalMoveDirection, characterRb.velocity.y);
         characterRb.velocity = new Vector2(characterRb.velocity.x, characterSpeed * verticalMoveDirection);
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Throwable")){
+            Health.playerHealth -= 10;
+        }
+    }
 }
