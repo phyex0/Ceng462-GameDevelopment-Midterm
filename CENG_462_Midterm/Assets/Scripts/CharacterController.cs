@@ -15,8 +15,8 @@ public class CharacterController : MonoBehaviour
 
     private float horizontalMoveDirection = 0f;
     private float verticalMoveDirection = 0f;
-    private float daggerXOffset = 1.45f;
-    private float daggerYOffset = 0.42f;
+    [SerializeField] private float daggerXOffset = 1.45f;
+    [SerializeField] private float daggerYOffset = 0.42f;
 
    
 
