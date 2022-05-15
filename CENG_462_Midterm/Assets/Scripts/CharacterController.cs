@@ -102,12 +102,18 @@ public class CharacterController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Throwable"))
         {
-            Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin      
+            if(Health.playerHealth != 0)
+            {
+                Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin   
+            }      
         }
 
-        if (collision.gameObject.CompareTag("Boss"))
+        else if (collision.gameObject.CompareTag("Boss"))
         {
-            Health.playerHealth -= 20;
+            if (Health.playerHealth != 0)
+            {
+                Health.playerHealth -= 20; //health bir yerde patlarsa starttan aklýna gelsin   
+            }           
         }
 
         if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus"))

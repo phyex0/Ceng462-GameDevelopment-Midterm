@@ -23,13 +23,21 @@ public class MoveForward : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
-
-        if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus") || collision.gameObject.CompareTag("Boss"))
+        if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus"))
         {
             hit.Play();
             Score.totalScore += 10;
         }   
+
+        else if (collision.gameObject.CompareTag("Boss"))
+        {
+            hit.Play();
+            Score.totalScore += 10;
+            if(Health.bossHealth != 0){
+                Health.bossHealth -= 10;
+            }          
+        }
+
         Destroy(gameObject);      
     }
 }

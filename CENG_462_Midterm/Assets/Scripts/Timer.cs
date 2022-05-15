@@ -32,6 +32,6 @@ public class Timer : MonoBehaviour
         TimeVal=0;
         TimeText.color = Color.red;
         }
-        TimeText.text = TimeVal.ToString("f2");
+        TimeText.text = ((int)TimeVal).ToString();
     }
 }

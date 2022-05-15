@@ -2024,6 +2024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1529740056}
+  timeText: {fileID: 10065244}
 --- !u!4 &274864215
 Transform:
   m_ObjectHideFlags: 0
@@ -3646,7 +3647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89d6750b4f3d66418cf1f4b6a561fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeVal: 20
+  TimeVal: 200
   TimeText: {fileID: 10065244}
 --- !u!1001 &1756272306
 PrefabInstance:
