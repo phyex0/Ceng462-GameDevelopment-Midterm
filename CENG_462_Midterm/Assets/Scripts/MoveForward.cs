@@ -6,11 +6,12 @@ using UnityEngine;
 public class MoveForward : MonoBehaviour
 {
     [SerializeField]   private float speed = 15.0f;
-    private AudioSource HitSource;
+    private AudioSource hit;
+    
 
     private void Awake()
     {
-        HitSource = GetComponent<AudioSource>();
+        hit = GameObject.Find("Audio Source").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,8 +23,12 @@ public class MoveForward : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        HitSource.Play();
-        Destroy(gameObject);
-        
+        Debug.Log(collision.gameObject.tag);
+
+        if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus") || collision.gameObject.CompareTag("Boss"))
+        {
+            hit.Play();
+        }   
+        Destroy(gameObject);      
     }
 }

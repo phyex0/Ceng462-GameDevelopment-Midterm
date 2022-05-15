@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Blue Virus
   - Red Virus
+  - Boss
   layers:
   - Default
   - TransparentFX
