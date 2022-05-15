@@ -19,6 +19,7 @@ public class FinalLevelScript : MonoBehaviour
 
         if (Health.playerHealth <= 0)
         {
+            Destroy(GameObject.Find("BackgroundMusic"));
             SceneManager.LoadScene("GameOver");
         }
 

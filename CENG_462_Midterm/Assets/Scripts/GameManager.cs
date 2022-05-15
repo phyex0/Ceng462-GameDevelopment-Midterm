@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private TMPro.TextMeshProUGUI scoreText;
+    [SerializeField] private TMPro.TextMeshProUGUI healthText;
     [SerializeField] private Text timeText;
 
     private GameObject[] redVirus;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         scoreText.text = (Score.totalScore).ToString();
+        healthText.text = (Health.playerHealth).ToString();
     }
 
     // Update is called once per frame
@@ -27,24 +29,19 @@ public class GameManager : MonoBehaviour
         blueVirus = GameObject.FindGameObjectsWithTag("Blue Virus");
 
         scoreText.text = (Score.totalScore).ToString();
+        healthText.text = (Health.playerHealth).ToString();
 
-        if(String.Compare(timeText.text, "0") == 0)
+        if ((String.Compare(timeText.text, "0") == 0 ) || Health.playerHealth == 0)
         {
+            Destroy(GameObject.Find("BackgroundMusic"));
             SceneManager.LoadScene("GameOver");
         }
 
 
         if ((redVirus.Length == 0 && blueVirus.Length == 0) && SceneManager.GetActiveScene().name != "FinalLevel")
         {
-
-            if(Score.totalScore == 0)
-            {
-                SceneManager.LoadScene("GameOver");
-            }
-            else
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }      
+            Health.playerHealth = 100;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);             
         } 
 
 

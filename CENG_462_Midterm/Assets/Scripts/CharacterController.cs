@@ -112,19 +112,18 @@ public class CharacterController : MonoBehaviour
         {
             if (Health.playerHealth != 0)
             {
-                Health.playerHealth -= 20; //health bir yerde patlarsa starttan aklýna gelsin   
+                Health.playerHealth -= 25; //health bir yerde patlarsa starttan aklýna gelsin   
             }           
         }
 
         if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus"))
         {
-            if (Score.totalScore != 0)
+
+            Health.playerHealth -= 20;
+
+            if (Score.totalScore > 0)
             {
-                Score.totalScore -= 10;
-            }
-            else
-            {
-                Score.totalScore = 0;
+                Score.totalScore -= 10;               
             }
         }
     }
