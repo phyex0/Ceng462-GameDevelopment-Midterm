@@ -28,8 +28,9 @@ public class StartScreen : MonoBehaviour
         }
         else
         {
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            SceneManager.GetActiveScene().name.Equals("Level1_tileMapDesign");
+            //SceneManager.GetActiveScene().name.Equals("Level1_tileMapDesign");
         }
 
 
