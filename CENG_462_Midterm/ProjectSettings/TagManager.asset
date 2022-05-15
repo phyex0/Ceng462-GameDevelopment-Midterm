@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Throwable
   - Wall
+  - Virus
   layers:
   - Default
   - TransparentFX

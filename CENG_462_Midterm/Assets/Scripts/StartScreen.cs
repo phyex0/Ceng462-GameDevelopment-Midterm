@@ -29,6 +29,7 @@ public class StartScreen : MonoBehaviour
         else
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
 
 
