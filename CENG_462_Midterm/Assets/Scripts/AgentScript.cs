@@ -44,7 +44,7 @@ public class AgentScript : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 lookPos;
-        Quaternion targetRot;
+        
 
         lookPos = target.position - transform.position;
 

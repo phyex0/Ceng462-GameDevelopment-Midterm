@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: bab78c1ebab84db4e80a552915f28a43
+  - enabled: 1
+    path: Assets/Scenes/Level1_tileMapDesign.unity
+    guid: 3e21a8bb81930b84eadb911f7b19f5fb
+  - enabled: 1
+    path: Assets/Scenes/Level2_TilePalette.unity
+    guid: da3c38b63649ce549b9853351c9650f9
+  - enabled: 1
     path: Assets/Scenes/BossDuel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 6ec9b6b75d09927419155948913e2841
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 9ac9c047e1d946549b6c159df933358c
   m_configObjects: {}

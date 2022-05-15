@@ -6,6 +6,13 @@ using UnityEngine;
 public class MoveForward : MonoBehaviour
 {
     [SerializeField]   private float speed = 15.0f;
+    private AudioSource HitSource;
+
+    private void Awake()
+    {
+        HitSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -15,6 +22,8 @@ public class MoveForward : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        HitSource.Play();
         Destroy(gameObject);
+        
     }
 }
