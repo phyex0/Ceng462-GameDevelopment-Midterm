@@ -28,6 +28,7 @@ public class MoveForward : MonoBehaviour
         if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus") || collision.gameObject.CompareTag("Boss"))
         {
             hit.Play();
+            Score.totalScore += 10;
         }   
         Destroy(gameObject);      
     }

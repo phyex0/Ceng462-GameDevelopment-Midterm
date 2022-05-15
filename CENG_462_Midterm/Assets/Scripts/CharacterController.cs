@@ -100,8 +100,26 @@ public class CharacterController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Throwable")){
-            Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin
+        if (collision.gameObject.CompareTag("Throwable"))
+        {
+            Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin      
+        }
+
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            Health.playerHealth -= 20;
+        }
+
+        if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus"))
+        {
+            if (Score.totalScore != 0)
+            {
+                Score.totalScore -= 10;
+            }
+            else
+            {
+                Score.totalScore = 0;
+            }
         }
     }
 }
