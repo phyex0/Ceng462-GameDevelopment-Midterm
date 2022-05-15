@@ -31,8 +31,9 @@ public class MoveForward : MonoBehaviour
 
         else if (collision.gameObject.CompareTag("Boss"))
         {
+            Score.totalScore += 15;
+
             hit.Play();
-            Score.totalScore += 10;
             if(Health.bossHealth != 0){
                 Health.bossHealth -= 10;
             }          

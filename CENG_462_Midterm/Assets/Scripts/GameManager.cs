@@ -36,7 +36,17 @@ public class GameManager : MonoBehaviour
 
         if ((redVirus.Length == 0 && blueVirus.Length == 0) && SceneManager.GetActiveScene().name != "FinalLevel")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            if(Score.totalScore == 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }      
         } 
+
+
     }
 }

@@ -5,14 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class FinalLevelScript : MonoBehaviour
 {
+    [SerializeField] private TMPro.TextMeshProUGUI scoreText;
+
+    private void Start()
+    {
+        scoreText.text = (Score.totalScore).ToString();
+    }
+
     private void Update()
     {
-        if (Health.playerHealth == 0)
+        scoreText.text = (Score.totalScore).ToString();
+
+
+        if (Health.playerHealth <= 0)
         {
             SceneManager.LoadScene("GameOver");
         }
 
-        else if (Health.bossHealth == 0)
+        if (Health.bossHealth <= 0)
         {
             SceneManager.LoadScene("Win");
         }
