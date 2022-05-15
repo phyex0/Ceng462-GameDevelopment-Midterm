@@ -10,6 +10,6 @@ public class DisplayNameAndScore : MonoBehaviour
 
     private void Start()
     {
-        text.text = Score.playerName;
+        text.text = (Score.totalScore).ToString();
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4048553816122455013}
   - component: {fileID: 3163885095193736162}
   m_Layer: 0
-  m_Name: virus
+  m_Name: ThrowableVirus
   m_TagString: Throwable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

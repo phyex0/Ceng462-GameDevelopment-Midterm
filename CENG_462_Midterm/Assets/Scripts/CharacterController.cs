@@ -15,8 +15,8 @@ public class CharacterController : MonoBehaviour
 
     private float horizontalMoveDirection = 0f;
     private float verticalMoveDirection = 0f;
-    private float daggerXOffset = 1.45f;
-    private float daggerYOffset = 0.42f;
+    [SerializeField] private float daggerXOffset = 1.45f;
+    [SerializeField] private float daggerYOffset = 0.42f;
 
    
 
@@ -100,8 +100,31 @@ public class CharacterController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Throwable")){
-            Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin
+        if (collision.gameObject.CompareTag("Throwable"))
+        {
+            if(Health.playerHealth != 0)
+            {
+                Health.playerHealth -= 10;  //health bir yerde patlarsa starttan aklýna gelsin   
+            }      
+        }
+
+        else if (collision.gameObject.CompareTag("Boss"))
+        {
+            if (Health.playerHealth != 0)
+            {
+                Health.playerHealth -= 25; //health bir yerde patlarsa starttan aklýna gelsin   
+            }           
+        }
+
+        if(collision.gameObject.CompareTag("Blue Virus") || collision.gameObject.CompareTag("Red Virus"))
+        {
+
+            Health.playerHealth -= 20;
+
+            if (Score.totalScore > 0)
+            {
+                Score.totalScore -= 10;               
+            }
         }
     }
 }
