@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
 --- !u!1107 &-9161617156246737934
+========
+--- !u!1107 &-47540286596529847
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -10,7 +14,11 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
     m_State: {fileID: 2597131936974309541}
+========
+    m_State: {fileID: 2196876000106618294}
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
     m_Position: {x: 200, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
@@ -21,20 +29,32 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
   m_DefaultState: {fileID: 2597131936974309541}
+========
+  m_DefaultState: {fileID: 2196876000106618294}
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
   m_Name: Square
+========
+  m_Name: Virus2
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
     m_StateMachine: {fileID: -9161617156246737934}
+========
+    m_StateMachine: {fileID: -47540286596529847}
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -44,14 +64,22 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
 --- !u!1102 &2597131936974309541
+========
+--- !u!1102 &2196876000106618294
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
   m_Name: Virus1Anim
+========
+  m_Name: Virus2Anim
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -64,7 +92,11 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
+<<<<<<<< HEAD:CENG_462_Midterm/Assets/Sprites/Mikrob/Square.controller
   m_Motion: {fileID: 7400000, guid: 58a88fb4d8f5f664a988acf6d9ee33f9, type: 2}
+========
+  m_Motion: {fileID: 7400000, guid: 4c06dda178feb3a4aa11969ac561a6e1, type: 2}
+>>>>>>>> main:CENG_462_Midterm/Assets/Scripts/Virus2.controller
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
