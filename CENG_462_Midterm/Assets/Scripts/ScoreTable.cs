@@ -38,7 +38,7 @@ public class ScoreTable : MonoBehaviour
             if (Score.totalScore > PlayerPrefs.GetInt("playerScore0"))
             {
                 int tempScore = PlayerPrefs.GetInt("playerScore0");
-                string tempName = PlayerPrefs.GetString("playerName");
+                string tempName = PlayerPrefs.GetString("playerName0");
 
                 PlayerPrefs.SetInt("playerScore0", Score.totalScore);
                 PlayerPrefs.SetInt("playerScore1", tempScore);

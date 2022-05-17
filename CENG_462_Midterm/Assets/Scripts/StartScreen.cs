@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor;
 
 public class StartScreen : MonoBehaviour
 {
@@ -34,7 +35,10 @@ public class StartScreen : MonoBehaviour
 
     public void ExitGame()
     {
-        Application.Quit();
-        Debug.Log("Exit succcesfully");
+        #if UNITY_EDITOR
+            EditorApplication.ExitPlaymode();
+        #else
+            Application.Quit(); // original code to quit Unity player
+        #endif
     }
 }
